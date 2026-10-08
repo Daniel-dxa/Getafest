@@ -29,7 +29,6 @@ if ($edad < 18) {
 <p>El evento es exclusivo para mayores de 18 años.</p>
 <a href="index.php">Volver</a>
 </div>
-</div></body></html>
 <?php
     exit;
 }
@@ -41,7 +40,6 @@ if ($_FILES['foto']['type'] != "image/png" && $_FILES['foto']['type'] != "image/
 <p>La foto no es válida (solo png o jpg).</p>
 <a href="index.php">Volver</a>
 </div>
-</div></body></html>
 <?php
     exit;
 }
