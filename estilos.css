@@ -1,0 +1,127 @@
+/* Daniel Bonifaz Zaquinaula - DEC*/
+/* Css utilizado de ejercicio habilidades*/
+
+:root {
+--bg-color: #0b1320;
+--card-bg: #2a3550;
+--text-color: #f8fafc;
+--accent-color: #19c8ff;
+--border-radius: 12px;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--bg-color);
+color: var(--text-color);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+margin: 0;
+padding: 20px;
+}
+
+.container {
+display: flex;
+gap: 30px;
+max-width: 900px;
+width: 100%;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+/* Título y subtítulo del festival */
+h1 {
+width: 100%;
+text-align: center;
+color: var(--accent-color);
+margin: 0;
+}
+
+.subtitulo {
+width: 100%;
+text-align: center;
+margin: 0;
+}
+
+.card {
+background-color: var(--card-bg);
+padding: 30px;
+border-radius: var(--border-radius);
+box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+flex: 1;
+min-width: 300px;
+max-width: 520px;
+}
+
+h2, h3 {
+margin-top: 0;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+label {
+display: block;
+margin-bottom: 8px;
+font-weight: 600;
+font-size: 0.9rem;
+}
+
+/* Radios y checkboxes en línea */
+.opcion {
+display: inline-block;
+font-weight: normal;
+margin-right: 12px;
+cursor: pointer;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select, textarea {
+width: 100%;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #3b4766;
+background-color: #3b4766;
+color: white;
+box-sizing: border-box;
+}
+
+.btn { 
+width: 100%;
+background-color: var(--accent-color);
+color: black;
+border: none;
+padding: 12px;
+border-radius: 6px;
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.btn:hover {
+filter: brightness(1.2);
+}
+
+/* Estilos del ticket */
+.ticket img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+.total {
+font-size: 1.4rem;
+font-weight: bold;
+color: var(--accent-color);
+}
+
+a {
+color: var(--accent-color);
+}
+
+/* Tarjeta de error */
+.error {
+background-color: #7a1f1f;
+}
