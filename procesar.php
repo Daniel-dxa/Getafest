@@ -3,7 +3,7 @@
 
 //Si entran escribiendo la URL (sin POST), los mandamos al formulario
 if ($_SERVER['REQUEST_METHOD'] != "POST") {
-    Header("Location: index.php");
+    header("Location: index.php");
     exit;
 }
 
@@ -76,6 +76,5 @@ $total = $precioBase + $suplemento;
 <a href="index.php">Nueva reserva</a>
 </div>
 
-</div>
 </body>
 </html>
